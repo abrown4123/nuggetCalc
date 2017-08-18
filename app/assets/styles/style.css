@@ -2,19 +2,23 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-}
-
-.wrapper {
-	text-align: center;
 	background: #800080; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(left, #800080, #ffc0cb); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(right, #800080, #ffc0cb); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(right, #800080, #ffc0cb); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to right, #800080, #ffc0cb); /* Standard syntax */
+}
+
+.wrapper {
+	text-align: center;
 	height: 100%;
 }
 
 h1{
 	margin: 0;
 	padding: 1rem;
+}
+
+img {
+	width: 2rem;
 }
