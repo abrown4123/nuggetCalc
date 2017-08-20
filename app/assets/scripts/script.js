@@ -1,20 +1,22 @@
 $('#button').click(function(){
 	var money = $('#money').val();
-	var nuggets = nuggetMath(money);
-	$('p').text(nuggets + ' nuggets');
-	nuggetPic(nuggets);
-	console.log(nuggets);
+	if (money > 10000){
+		$('p').text('Any value over $10,000 will potentially crash your browser.');
+		nuggetPic(0);
+	} else if (money > 0 && money <= 10000){
+			var nuggets = Math.floor(money * 4);
+			$('p').text("You Can Buy " + nuggets + ' Nuggets');
+			nuggetPic(nuggets);
+	} else {
+			$('p').text('Please Enter a Valid Dollar Amount');
+			nuggetPic(0);
+		}
 });
-
-function nuggetMath(num){
-	return (num/2.5)*10;
-}
 
 function nuggetPic(nug) {
 	var imgDiv = $('#imgCont');
-	$(imgDiv).html('');
+	imgDiv.html('');
 	for (i=0; i<nug; i++) {
-		var img = $('<img src = "assets/images/nugget.png"/>');
-		img.appendTo(imgDiv);
+		imgDiv.append('<img src = "assets/images/nugget.png"/>');
 	}
 }

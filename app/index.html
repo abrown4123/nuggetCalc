@@ -2,15 +2,15 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
 		<link type = 'text/css' rel = "stylesheet" href = "./assets/styles/style.css"/>
 	</head>
 	<body>
 		<div class = "wrapper">
 			<h1>Nugget Calculator</h1>
-			<h3>This will app will give you a visual representation of how many chicken nuggets you can buy with the amount entered.</h3>
-			<label>$
-				<input type = 'number' name = 'amount' id='money' placeholder = '0'/>
-			</label>
+			<h3>This will app will give you a visual representation of the amount of chicken nuggets you can buy from McDonalds.</h3>
+			<label for = 'money'>$</label>
+			<input type = 'number' name = 'amount' id='money' placeholder = '0'/>
 			<button id = 'button' class = "button">Submit</button>
 			<p></p>
 			<div id = 'imgCont'></div>
@@ -21,7 +21,6 @@
   		crossorigin="anonymous">
 		</script>
 		<script src = './assets/scripts/script.js'></script>
-		<script src = "../script.js"></script>
 	</body>
 </html>
 
